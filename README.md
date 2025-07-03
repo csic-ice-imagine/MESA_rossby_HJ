@@ -1,4 +1,4 @@
-This repository contains the necessary MESA files to run the results shown in Elias-López et al 2025 b "Rossby number regime, convection suppression, and dynamo-generated magnetism in inflated hot Jupiters".
+This repository contains the necessary MESA files to obtain the results shown in Elias-López et al 2025 b "Rossby number regime, convection suppression, and dynamo-generated magnetism in inflated hot Jupiters".
 
 MESA version 24.08.1 was used. Additional Python scripts for analysis can be given upon request.
 
