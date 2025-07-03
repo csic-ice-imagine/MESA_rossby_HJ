@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# this provides the definition of do_one (run one part of test)
+# do_one [inlist] [output model] [LOGS directory]
+source "${MESA_DIR}/star/test_suite/test_suite_helpers"
+
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+
+do_one inlist_relax_header planet_core_relaxed.mod LOGS_relax
+do_one inlist_evolve_header planet_evolve_1.0_MJ_10.0_ME_5.0_RJ.mod LOGS_5RJ_P_0_495_F_9_12e9_T_2453
+
+date "+DATE: %Y-%m-%d%nTIME: %H:%M:%S"
+
+echo 'finished'
+

@@ -1,0 +1,214 @@
+&pgstar
+
+    !pause = .true. 
+
+    pgstar_interval = 1
+    
+    Grid1_win_flag = .true.
+    Grid1_file_flag = .true.
+    Grid1_win_width = 24
+    Grid1_file_width = 30  
+    Grid1_win_aspect_ratio = 0.6                                                                                                                                  
+    Grid1_file_dir = 'png_5RJ_P_0_495_F_9_12e9_T_2453'
+    Grid1_file_prefix = 'planet_grid'
+    Grid1_file_interval = 1
+    Grid1_file_aspect_ratio = -1
+
+      ! ::
+
+    Grid1_xleft = 0.05
+    Grid1_xright = 0.97
+    Grid1_ybot = 0.08
+    Grid1_ytop = 0.96
+    Grid1_title = ''
+
+      ! ::
+
+    Grid1_plot_name(:) = ''
+    Grid1_plot_row(:) = 1
+    Grid1_plot_rowspan(:) = 1
+    Grid1_plot_col(:) = 1
+    Grid1_plot_colspan(:) = 1
+    Grid1_plot_pad_left(:) = 0.0
+    Grid1_plot_pad_right(:) = 0.0
+    Grid1_plot_pad_top(:) = 0.0
+    Grid1_plot_pad_bot(:) = 0.0
+    Grid1_txt_scale_factor(:) = 0.5
+
+      ! set default
+
+      ! ::
+
+    Grid1_num_cols = 6
+    Grid1_num_rows = 16
+    Grid1_num_plots = 10
+
+      ! ::
+
+    Grid1_plot_name(1) = 'TRho_Profile'
+    TRho_Profile_xmin = -7.1
+    TRho_Profile_xmax = 2.2
+    TRho_Profile_ymin = 2.0
+    TRho_Profile_ymax = 8.0
+    Grid1_plot_row(1) = 1
+    Grid1_plot_rowspan(1) = 4
+    Grid1_plot_col(1) = 1
+    Grid1_plot_colspan(1) = 2
+    Grid1_plot_pad_left(1) = 0.01
+    Grid1_plot_pad_right(1) = 0.07
+    Grid1_plot_pad_top(1) = 0.0
+    Grid1_plot_pad_bot(1) = 0.035
+    Grid1_txt_scale_factor(1) = 0.5
+    
+      ! ::
+
+    Grid1_plot_name(2) = 'HR'
+    !HR_logT_min = 3.05
+    !HR_logT_max = 3.2
+    !HR_logL_min = -5
+    !HR_logL_max = -3.5
+    Grid1_plot_row(2) = 6
+    Grid1_plot_rowspan(2) = 4
+    Grid1_plot_col(2) = 1
+    Grid1_plot_colspan(2) = 2
+    Grid1_plot_pad_left(2) = 0.01
+    Grid1_plot_pad_right(2) = 0.07
+    Grid1_plot_pad_top(2) = 0.005
+    Grid1_plot_pad_bot(2) = 0.03
+    Grid1_txt_scale_factor(2) = 0.5
+    
+      ! ::
+
+    Grid1_plot_name(3) = 'History_Panels1'
+    History_Panels1_title = 'Time evolution'
+    History_Panels1_xaxis_name = 'star_age'
+    History_Panels1_xaxis_log = .true.
+    History_Panels1_xmin = 3
+    History_Panels1_xmax = 10.5
+    History_Panels1_num_panels = 3
+    
+    History_Panels1_yaxis_name(1) = 'log_R'
+    !History_Panels1_ymin(1) = -1.05
+    !History_Panels1_ymax(1) = -0.65
+    
+    History_Panels1_other_yaxis_name(1) = 'star_mass'
+    !History_Panels1_other_ymin(1) = 0
+    !History_Panels1_other_ymax(1) = 0.006
+
+    History_Panels1_yaxis_name(2) = 'log_center_T'
+    !History_Panels1_ymin(2) = 5
+    !History_Panels1_ymax(2) = 4
+    
+    History_Panels1_other_yaxis_name(2) = 'log_center_Rho'
+    !History_Panels1_other_ymin(2) = 0.05
+    !History_Panels1_other_ymax(2) = 0.8
+
+    History_Panels1_yaxis_name(3) = 'log_L'
+    !History_Panels1_ymin(3) = -5
+    !History_Panels1_ymax(3) = -3
+
+    History_Panels1_other_yaxis_name(3) = 'log_Teff'
+    !History_Panels1_other_ymin(3) = 3
+    !History_Panels1_other_ymax(3) = 3.2
+    
+    Grid1_plot_row(3) = 1
+    Grid1_plot_rowspan(3) = 11
+    Grid1_plot_col(3) = 5
+    Grid1_plot_colspan(3) = 2
+    Grid1_plot_pad_left(3) = 0.035
+    Grid1_plot_pad_right(3) = 0.03
+    Grid1_plot_pad_top(3) = 0.000
+    Grid1_plot_pad_bot(3) = 0.01
+    Grid1_txt_scale_factor(3) = 0.5
+
+      ! ::
+
+    Grid1_plot_name(4) = 'Profile_Panels1'
+    Profile_Panels1_title = 'Radial profiles'
+    Profile_Panels1_xaxis_name = 'radius'
+    Profile_Panels1_num_panels = 5
+    Profile_Panels1_yaxis_name(1) = 'logT'
+    Profile_Panels1_other_yaxis_name(1) = 'entropy'
+    Profile_Panels1_yaxis_name(2) = 'logRho'
+    Profile_Panels1_other_yaxis_name(2) = 'logP'
+    Profile_Panels1_yaxis_name(3) = 'log_g'
+    Profile_Panels1_other_yaxis_name(3) = 'log_mass'
+    Profile_Panels1_yaxis_name(4) = 'gamma1'
+    Profile_Panels1_other_yaxis_name(4) = 'gamma3'
+    Profile_Panels1_yaxis_name(5) = 'chiRho'
+    Profile_Panels1_other_yaxis_name(5) = 'chiT'
+    Grid1_plot_row(4) = 1
+    Grid1_plot_rowspan(4) = 16
+    Grid1_plot_col(4) = 3
+    Grid1_plot_colspan(4) = 2
+    Grid1_plot_pad_left(4) = 0.00
+    Grid1_plot_pad_right(4) = 0.07
+    Grid1_plot_pad_top(4) = 0.0
+    Grid1_plot_pad_bot(4) = 0.0
+    Grid1_txt_scale_factor(4) = 0.5
+    
+    ! ::
+
+    Grid1_plot_name(5) = 'Profile_Panels2'
+    Profile_Panels2_title = 'Abundance profiles'
+    Profile_Panels2_xaxis_name = 'radius'
+    Profile_Panels2_num_panels = 1
+    Profile_Panels2_yaxis_name(1) = 'log_x'
+    Profile_Panels2_other_yaxis_name(1) = 'log_y'
+    Profile_Panels2_xaxis_reversed = .false.
+    Grid1_plot_row(5) = 13
+    Grid1_plot_rowspan(5) = 4
+    Grid1_plot_col(5) = 5
+    Grid1_plot_colspan(5) = 2
+    Grid1_plot_pad_left(5) = 0.035
+    Grid1_plot_pad_right(5) = 0.03
+    Grid1_plot_pad_top(5) = 0.03
+    Grid1_plot_pad_bot(5) = 0.0
+    Grid1_txt_scale_factor(5) = 0.5
+
+      ! ::
+
+    Grid1_plot_name(6) = 'Text_Summary1'
+    Text_Summary1_num_rows = 14
+    Text_Summary1_num_cols = 1
+    Grid1_plot_row(6) = 10
+    Grid1_plot_rowspan(6) = 8
+    Grid1_plot_col(6) = 1
+    Grid1_plot_colspan(6) = 1
+    Grid1_plot_pad_left(6) = 0.02
+    Grid1_plot_pad_right(6) = 0.0
+    Grid1_plot_pad_top(6) = 0.02
+    Grid1_plot_pad_bot(6) = 0.01
+    Grid1_txt_scale_factor(6) = 0.22
+    
+    Text_Summary1_name(1,1) = 'model_number'
+    Text_Summary1_name(2,1) = 'log_star_age'
+    Text_Summary1_name(3,1) = 'log_dt'
+    Text_Summary1_name(4,1) = 'log_L'
+    Text_Summary1_name(5,1) = 'log_Teff'
+    Text_Summary1_name(6,1) = 'log_R'
+    Text_Summary1_name(7,1) = 'log_g'
+    Text_Summary1_name(8,1) = 'log_surf_cell_P'
+    Text_Summary1_name(9,1) = 'star_mass'
+    Text_Summary1_name(10,1) = 'log_abs_mdot'
+    Text_Summary1_name(11,1) = 'log_cntr_T'
+    Text_Summary1_name(12,1) = 'log_cntr_Rho'
+    Text_Summary1_name(13,1) = 'log_center_P'
+
+      ! ::
+
+    Text_Summary1_file_flag = .false.
+    Text_Summary1_file_dir = 'png'
+    Text_Summary1_file_prefix = 'Text_Summary1_'
+    Text_Summary1_file_interval = 5
+    Text_Summary1_file_width = -1
+    Text_Summary1_file_aspect_ratio = -1
+         
+      ! top level controls
+
+         !pause = .true. 
+            ! if true, the code waits for user to enter a RETURN on the command line
+      
+
+
+/ ! end of pgstar namelist
